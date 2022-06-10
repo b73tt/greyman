@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Greyman</title>
+		<script src='sha512.js'></script>
+		<script src='popup.js'></script>
+		<style>
+			body {
+				font-family: Helvetica, Verdana, Arial, sans;
+				width: 350px;
+			}
+			h3 {
+				color: #aaaaaa;
+			}
+			h4 {
+				color: #666666;
+			}
+			h3,h4 {
+				text-align: center;
+				margin: 5px;
+			}
+			span, a {
+				font-weight: bold;
+				margin-left: 5px;
+				margin-right: 5px;
+			}
+			input {
+				display: block;
+				width: 100%;
+				text-align: center;
+				border: none;
+				background-color: white;
+			}
+			#seedbtn {
+				color: #888888;
+				font-size: 14px;
+			}
+			#accbtn {
+				color: #888888;
+				font-size: 14px;
+				display: inline;
+				width: 30px;
+				position: absolute;
+				top: 10px;
+				right: 10px;
+			}
+			#seed {
+				border: 1px solid #666666;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>greyman</h3>
+		<h4 id='domain'></h4>
+		<input type='button' id='accbtn' value='1'></input>
+		<table>
+			<tr>
+				<td>Name:</td>
+				<td><span id='name'></span></td>
+			</tr>
+			<tr>
+				<td>Date of Birth:</td>
+				<td><span id='dob'></span></td>
+			</tr>
+			<tr>
+				<td>Handle:</td>
+				<td><span id='username'></span> / <span id='handle'></span></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><span id='password'></span></td>
+			</tr>
+			<tr>
+				<td>Email:</td>
+				<td><a id='email' target="_blank"></a></td>
+			</tr>
+		</table>
+		<input type='text' id='seed'></input>
+		<input type='button' id='seedbtn' value='show seed'></input>
+	</body>
+</html>

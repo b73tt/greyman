@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+	"name": "greyman",
+	"version": "5.0",
+	"description": "Generates a different identity for every website you visit.",
+
+	"permissions": [ "tabs", "storage" ],
+	"browser_action": {
+		"default_icon": "greyman19.png",
+		"default_title": "greyman",
+		"default_popup": "popup.html"
+	},
+	"icons":{
+		"128":"greyman128.png"
+	}
+}
